@@ -2,8 +2,7 @@ from flask import Flask, render_template, request
 from youtube_transcript_api import YouTubeTranscriptApi
 import google.generativeai as genai
 from dotenv import load_dotenv
-from werkzeug.utils import import_string
-url_quote = import_string('werkzeug.urls:url_quote')
+from urllib.parse import quote  # Import quote from urllib.parse
 import os
 
 def configure():
