@@ -2,3 +2,5 @@ flask
 youtube-transcript-api
 google-generativeai
 python-dotenv
+Gunicorn
+Werkzeug
