@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Video Summarizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="animate__animated animate__fadeInDown">
+        YouTube Video Summarizer
+      </h1>
+    </header>
+    <main>
+      <div class="container animate__animated animate__fadeInUp">
+        <h2>Enter YouTube Video URL</h2>
+        <form method="post">
+          <input
+            type="text"
+            name="video_url"
+            placeholder="Enter YouTube video URL"
+            required
+          />
+          <button type="submit" class="btn">Generate Summary</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2023 YouTube Video Summarizer</p>
+      <p>Made with ❤️ in India</p>
+    </footer>
+  </body>
+</html>
